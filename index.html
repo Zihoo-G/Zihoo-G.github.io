@@ -1,322 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css'>
-    <link rel="stylesheet" href="./static/css/semantic.css">
-    <link rel="stylesheet" href="./static/css/myStyle.css">
+    <title>Zihoo-个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+    <!-- //online-fonts -->
 </head>
 <body>
-    
-    <nav class="ui attached segment m-padded-tb-mini">
+    <div class="sidenav">
+		<div class="side_top">
+			<img src="images/logo.jpg" style="width: 100px; height: 100px;" alt="news image" class="img-fluid navimg">
+			<h1> 郭智昊 </h1>
+            <h3> 石家庄铁道大学 | 软件工程系 </h3>
+		</div>
+		<!-- header -->
+		<header>
+			<div class="container-fluid px-lg-5 ">
+				<nav class="mnu mx-auto">
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop">
+						<ul class="menu">
+							<li class="active"><a href="index.html">基本信息</a></li>
+							 <li class="mt-sm-3"><a href="#about" class="scroll">教育经历</a></li>
+							 <li class="mt-sm-3"><a href="#gallery" class="scroll">职业技能</a></li>
+							<li class="mt-sm-3"><a href="#services" class="scroll">项目展示</a></li>
+                        </ul>
+				</nav>
+			</div>
+		</header>
+    </div>
+    <div class="main" id="about">
+        <div class="banner-text-w3ls">
+            <div class="container">
+                <div class="mx-auto text-left">
+                    <h2>个人资料</h2>
+                    <hr/>
 
-        <div class="ui container">
-            <div class="ui secondary stackable menu">
-                <h2 class="ui header item">blog</h2>
-                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="inof icon"></i>关于我</a>
-                <div class="right item">
-                    <div class="ui input">
-                        <input type="text" placeholder="Search...">
-                    </div>   
+                    <span class="name">郭智昊</span>&nbsp;&nbsp;<span class="sub-name">石家庄铁道大学</span>
+
+                    <div>
+                        <div class="banp">
+                            <img alt="出生年月" src="images/information/birthday.png" style="vertical-align: text-bottom">&nbsp;&nbsp;2001年1月
+                        </div>
+                        <div class="banp">
+                            <img alt="学历" src="images/information/education.png" style="vertical-align: text-bottom">&nbsp;&nbsp;本科
+                        </div>
+                        <div class="banp">
+                            <img alt="居住地" src="images/information/location.png" style="vertical-align: text-bottom">&nbsp;&nbsp;石家庄
+                        </div>
+                        <div class="banp">
+                            <img alt="电话" src="images/information/phone.png" style="vertical-align: text-bottom">&nbsp;&nbsp;15632190269
+                        </div>
+                        <div class="banp">
+                            <img alt="邮箱" src="images/information/email-fill.png" style="vertical-align: text-bottom">&nbsp;&nbsp;1071791709@qq.com
+                        </div>
+                        <div class="banp">
+                            <img alt="博客" src="images/information/blog.png" style="vertical-align: text-bottom">&nbsp;&nbsp;<a href="https://www.cnblogs.com/Gazikel/">Gazikel的博客园</a>
+                        </div>
+                    </div>
+                    <p class="banp" style="margin-top: 10px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前为石家庄铁道大学软件工程专业大四学生。通过三年的学习：掌握Java、Python等高级语言，熟练运用SpringBoot、Django、Vue等主流框架进行网站开发；使用Hadoop等一系列大数据生态圈进行大数据分析任务。有着公文流转管理系统、疫情数据可视化、遥感图片的智能解译等项目开发经验。共发表博客400余篇，累计访问次数突破3万次。
+                        
+                    </p>
+                    <p class="banp">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望与大家一起共同进步！
+                    </p>
+
+			
+					
                 </div>
             </div>
         </div>
-
-        <a href="#" class="ui menu toogle button m-top-right m-mobile-show">
-            <i class="sidebar icon"></i>
-        </a>
-    </nav>
-
-    <!-- 中间内容 -->
-    <div class="m-padded-tb-large">
-        <div class="ui container">
-            <div class="ui stackable grid">
-                <div class="eleven wide column">
-                    <div class="ui top attached segment">
-                        <div class="ui middle two column grid">
-                            <div class="column">
-                                <h3 class="ui header">博客</h3>
-                            </div>
-
-                            <div class="right aligned column">
-                                共&nbsp;<p style="display: inline-block;" class="ui header">14</p>篇
-                            </div>
-                        </div>
+		 <!-- Gallery -->
+        <section class="gallery" id="gallery">
+            <div class="container py-lg-5">
+                <h3 class="w3_head mb-5">教育经历</h3>
+                <div class="education-box">
+                    <div class="education-avatar">
+                        <img alt="石家庄铁道大学校徽" src="images/education/logo.png" height="60px">
                     </div>
-                    <!-- content -->
-                    <div class="ui attached segment">
-                        <div class="ui segment">
-                            <div class="ui stackable grid">
-                                <div class="eleven wide column">
-                                    <h3 class="ui header">你真正了解什么是财富自由吗？</h3>
-                                    <p>啦啦靓阿拉啦拉梁安利</p>
-                                    <div class="ui grid">
-                                        <div class="eleven wide column">
-                                            <div class="ui link list horizontal">
-                                                <div class="item">
-                                                    <img src="" alt="" class="ui avatar">
-                                                    <div class="content">
-                                                        <div class="header">
-                                                            Zihoo
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="calendar icon"></i>2021-07-28
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="eye icon"></i>1000000
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="right aligned five wide column">
-                                            <a href="#" class="ui basic label">认知升级</a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="five wide column">
-                                    <a target="blank" href="#">
-                                        <img src="https://images.unsplash.com/photo-1542293787938-c9e299b880cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="ui rounded image">
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="education-info">
+                        <div class="education-title">
+                            <span class="title">石家庄铁道大学</span><br/>
+                            <span class="sub-title">本科 | 2019-2023</span>
                         </div>
-                        <div class="ui segment">
-                            <div class="ui grid">
-                                <div class="eleven wide column">
-                                    <h3 class="ui header">你真正了解什么是财富自由吗？</h3>
-                                    <p>啦啦靓阿拉啦拉梁安利</p>
-                                    <div class="ui grid">
-                                        <div class="eleven wide column">
-                                            <div class="ui link list horizontal">
-                                                <div class="item">
-                                                    <img src="" alt="" class="ui avatar">
-                                                    <div class="content">
-                                                        <div class="header">
-                                                            Zihoo
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="calendar icon"></i>2021-07-28
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="eye icon"></i>1000000
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="right aligned five wide column">
-                                            <a href="#" class="ui basic label">认知升级</a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="five wide column">
-                                    <a target="blank" href="#">
-                                        <img src="https://images.unsplash.com/photo-1542293787938-c9e299b880cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="ui rounded image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui segment">
-                            <div class="ui grid">
-                                <div class="eleven wide column">
-                                    <h3 class="ui header">你真正了解什么是财富自由吗？</h3>
-                                    <p>啦啦靓阿拉啦拉梁安利</p>
-                                    <div class="ui grid">
-                                        <div class="eleven wide column">
-                                            <div class="ui link list horizontal">
-                                                <div class="item">
-                                                    <img src="" alt="" class="ui avatar">
-                                                    <div class="content">
-                                                        <div class="header">
-                                                            Zihoo
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="calendar icon"></i>2021-07-28
-                                                    </div>
-                                                    <div class="item">
-                                                        <i class="eye icon"></i>1000000
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="right aligned five wide column">
-                                            <a href="#" class="ui basic label">认知升级</a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="five wide column">
-                                    <a target="blank" href="#">
-                                        <img src="https://images.unsplash.com/photo-1542293787938-c9e299b880cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" class="ui rounded image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- bottom -->
-                    <div class="ui bottom attached segment">
-                        <div class="ui two column grid">
-                            <div class="column">
-                                <a href="#" class="ui button basic">上一页</a>
-                            </div>
-                            <div class="column right aligned">
-                                <a href="#" class="ui button basic">下一页</a>
-                            </div>
+                        <div class="clear-msg">
+                            <p class="banp">在校期间积极学习计算机专业基础知识，无挂科现象，平均绩点3.6。</p>
+                            <p class="banp">一等奖学金1次</p>
+                            <p class="banp">二等奖学金3次</p>
+                            <p class="banp">优秀团员</p>
+                            <p class="banp">软件著作权《基于鸿蒙系统的无人机配送系统》两项</p>
+                            <p class="banp">第二届火焰杯软件测试全国三等奖</p>
                         </div>
                     </div>
                 </div>
-    
-                <div class="five wide column">
-                    <div class="ui segments">
-                        <div class="ui secondary segment">
-                            <div class="ui two column grid">
-                                <div class="column">
-                                    <i class="idea icon"></i>分类
-                                </div>
-                                <div class="right aligned column">
-                                    <a href="#">more>></a>
-                                </div>
-                            </div>
-                        </div>
+			 <!-- <div class="row news-grids mt-lg-5 mt-4 text-center">
+                <div class="col-md-6 gal-img">
+                    <a href="#gal1"><img src="images/g2.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 proj-1 gal-img">
+                    <a href="#gal2"><img src="images/g3.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal3"><img src="images/g4.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal4"><img src="images/g5.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal5"><img src="images/g6.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-6 mt-5 gal-img">
+                    <a href="#gal6"><img src="images/g7.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+            </div> -->
+        </div>
+        <!-- popup-->
+        <!-- <div id="gal1" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div> -->
+        <!-- //popup -->
 
-                        <div class="ui segment">
-                            <div class="ui fluid vertical menu">
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui basic left pointing label">13</div>
-                                </a>
-                                <a href="#" class="item">学习日志</a>
-                                <a href="#" class="item">学习日志</a>
-                                <a href="#" class="item">学习日志</a>
+        <!-- popup-->
+        <!-- <div id="gal2" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div> -->
+        <!-- //popup -->
+        <!-- popup-->
+        <!-- <div id="gal3" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div> -->
+        <!-- //popup3 -->
+        <!-- popup-->
+        <!-- <div id="gal4" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div> -->
+        <!-- //popup -->
+        <!-- popup-->
+        <!-- <div id="gal5" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div> -->
+        <!-- //popup -->
+        <!-- popup-->
+        <!-- <div id="gal6" class="pop-overlay animate">
+            <div class="popup">
+                <img src="images/g7.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div> -->
+        <!-- //popup -->
+    </section>
+    <!-- services -->
+	<section class="slide-wrapper" id="services">
+        <div class="services">
+			<h3 class="w3_head mb-5">职业技能</h3>
+            <span class="sub-title">对技术栈的自我评估</span>
+			<div class="row service_w3top mt-5">
+                <div class="col-lg-6">
+                    <div class="skill-box">
+                        <p class="title">Java</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width:86%">
+                              86%
                             </div>
-                        </div>
+                          </div>
                     </div>
 
-                    <!-- 标签 -->
-                    <div class="ui segments">
-                        <div class="ui secondary segment">
-                            <div class="ui two column grid">
-                                <div class="column">
-                                    <i class="tags icon"></i>标签
-                                </div>
-                                <div class="right aligned column">
-                                    <a href="#" target="blank">more>></a>
-                                </div>
+                    <div class="skill-box">
+                        <p class="title">C++</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width:79%">
+                              79%
                             </div>
-                        </div>
-
-                        <div class="ui segment">
-                            <a href="" class="ui basic left pointing label m-margin-tb-tiny">
-                                方法论
-                                <div class="detail">23</div>
-                            </a>
-
-                            <a href="" class="ui basic left pointing label m-margin-tb-tiny">
-                                方法论
-                                <div class="detail">23</div>
-                            </a>
-
-                            <a href="" class="ui basic left pointing label m-margin-tb-tiny">
-                                方法论
-                                <div class="detail">23</div>
-                            </a>
-
-                            <a href="" class="ui basic left pointing label m-margin-tb-tiny">
-                                方法论
-                                <div class="detail">23</div>
-                            </a>
-                        </div>
+                          </div>
                     </div>
 
-                    <!-- 最新推荐 -->
-                    <div class="ui segments">
-                        <div class="ui secondary segment">
-                            <div class="ui two column grid">
-                                <div class="column">
-                                    <i class="bookmark icon"></i>最新推荐
-                                </div>
-                                <div class="right aligned column">
-                                    <a href="" target="blank">more>></a>
-                                </div>
+                    <div class="skill-box">
+                        <p class="title">Django</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                              82%
                             </div>
-                        </div>
-                        <div class="ui segment">
-                            <div class="ui segment">
-                                <a href="#" target="_blank">用户故事{{User story}}</a>
+                          </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <p class="title">大数据</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                              50%
                             </div>
-                            <div class="ui segment">
-                                <a href="#" target="_blank">用户故事{{User story}}</a>
-                            </div>
-                            <div class="ui segment">
-                                <a href="#" target="_blank">用户故事{{User story}}</a>
-                            </div>
-                            <div class="ui segment">
-                                <a href="#" target="_blank">用户故事{{User story}}</a>
-                            </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6">
+                    <div class="skill-box">
+                        <p class="title">Python</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                              90%
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <p class="title">SpringBoot</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width:78%">
+                              78%
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <p class="title">Vue</p>
+
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="width:69%">
+                              69%
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        
+        <!-- .Services ends here -->
+    </section>
+	<!-- //services -->
+
+	<!-- news -->
+    <div class="news" id="news">
+		<div class="text-left">
+			<h3 class="w3_head mb-5">项目展示</h3>
+		</div>
+			<div class="row news-grids">
+				<div class="col-lg-6 news-grids-left">
+					<div class="news_top">
+						<img src="images/program/p1.jpg" alt="news image" class="img-fluid">
+						<h4>疫情数据可视化系统</h4>
+						<p class="newsp">基于JavaWeb的疫情数据可视化系统，运用各种图表展示疫情的最新信息。 </p>
+					</div>
+				</div>
+				<div class="col-lg-6 news-grids-middle">
+					<div class="news_top">
+						<img src="images/program/p2.jpg" alt="news image" class="img-fluid">
+						<h4>外包项目后台管理系统</h4>
+						<p class="newsp">基于SpringBoot，实现对外包项目的智能化管理。 </p>
+					</div>
+				</div>
+				<div class="col-lg-6 news-grids-right">
+					<div class="news_top">
+						<img src="images/program/p3.jpg" alt="news image" class="img-fluid">
+						<h4>视频人像分割</h4>
+						<p class="newsp">基于C++与Pytorch，自动化将图像人像与背景分割开。 </p>
+					</div>
+				</div>
+				<div class="col-lg-6 news-grids-right">
+					<div class="news_top">
+						<img src="images/program/p4.jpg" alt="news image" class="img-fluid">
+						<h4>京东评论量大数据分析</h4>
+						<p class="newsp">获取实时评论数量，以图表形式展示给用户。 </p>
+					</div>
+				</div>
+				<div class="col-lg-6 news-grids-right">
+					<div class="news_top">
+						<img src="images/program/p5.jpg" alt="news image" class="img-fluid">
+						<h4>基于百度飞桨的遥感图像智能解译平台</h4>
+						<p class="newsp">基于人工智能对遥感图像进行分析 </p>
+					</div>
+				</div>
+				<div class="col-lg-6 news-grids-right">
+					<div class="news_top">
+						<img src="images/program/p6.jpg" alt="news image" class="img-fluid">
+						<h4>电力数据分析及可视化</h4>
+						<p class="newsp">对用户的用电量及用电习惯进行分析，使用图表联动的方式展示给用户</p>
+					</div>
+				</div>
+			</div>
+			<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">Learn More</a>			
+		</div>
+<!-- //news -->
+<!-- contact -->
+	 <!-- <section class="wedo" id="contact">
+			<h3 class="w3_head mb-5">Get In Touch </h3>
+		   <p class="banp mt-5"> Integer porttitor mollisar curae suspendisse mauris posuere accumsan massa posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus sit arcu sociis.</p>
+		   <div class="row mt-4">
+			   <div class="col-lg-7 contact_grid_right">
+					<form action="#" method="post">
+						<div class="row contact_top">
+							<div class="col-sm-6">
+								<input type="text" name="Name" placeholder="Name" required="">
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="Email" placeholder="Email" required="">
+							</div>
+						</div>	
+							
+							<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+							<input type="submit" class="btn" value="Send Message">
+					</form>
+				</div>
+				<div class="col-lg-5 contact_grid_left">
+				<h3 class="w3_head mb-5">Locate Us </h3>
+					<ul class="footer-bottom-list">
+							<li>
+								<span class="fa fa-map-marker"></span> 3481 Honey Street
+								<span> California, USA </span>
+								
+							</li>
+							<li>
+								<span class="fa fa-envelope"></span>
+								<a href="mailto:name@example.com"> mail@example.com</a>
+							</li>
+							<li>
+								<span class="fa fa-phone"></span> +143 367 436 2049 </li>
+							<li>
+								<span class="fa fa-fax"></span> +166 367 808 5055 </li>
+							<li>
+								<span class="fa fa-globe"></span>
+								<a href="#"> www.websitename.com</a>
+							</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cpy-right text-left">
+				<p>Copyright &copy; 2022.Zihoo All rights reserved.
+
+				</p>
+			</div>
+	</section> -->
+	 <!-- //contact -->
+
+     <div class="cpy-right text-left" style="margin-left: 10px">
+        <p>Copyright &copy; 2022.Zihoo All rights reserved.
+
+        </p>
+    </div>
     </div>
 
-    <!-- 页脚 -->
-    <footer class="ui inverted vertical segment m-padded-tb-massive">
-        <div class="ui center aligned container">
-            <div class="ui stackable grid divided inverted">
-                <div class="three wide column">
-                    <img src="" alt="" class="ui image round" style="width: 100px;">
-                </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">最新博客</h4>
-                    <div class="ui inverted link list">
-                        <a href="#" class="item">用户故事</a>
-                        <a href="#" class="item">用户故事</a>
-                        <a href="#" class="item">用户故事</a>
-                    </div>
-                </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">联系我</h4>
-                    <div class="ui inverted link list">
-                        <a href="#" class="item">Email: 1071791709@qq.com</a>
-                        <a href="#" class="item">Phone: 13180502531</a>
-                    </div>
-                </div>
-                <div class="seven wide column">
-                    <h4 class="ui header inverted">关于网站</h4>
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="ui inverted section divider"></div>
-
-            <p class="m-text-thin m-text-space m-opacity-mini">
-                Copyright © 2016-2021 Blog Designed by Zihoo
-            </p>
-            
-            
-        </div>
-    </footer>
-
-    <script src="./static/js/jquery.min.js"></script>
-    <script src="./static/js/semantic.min.js"></script>
-    <script>
-        $('.menu.toogle').click(function() {
-            $('.m-item').toggleClass('m-mobile-hide')
-        })
-    </script>
 </body>
 </html>
